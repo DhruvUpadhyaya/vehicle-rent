@@ -1,6 +1,9 @@
 **Heroku deployment**
 https://vehicle-rent.herokuapp.com/
 
+**POSTMAN COLLECTION**
+https://www.getpostman.com/collections/4438b8b261c41ba1ab4b
+
 ---
 
 **API Description**
