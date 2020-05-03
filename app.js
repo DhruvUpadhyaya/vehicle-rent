@@ -2,11 +2,11 @@ const express = require("express");
 const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
 const app = express();
-var port_number = server.listen(process.env.PORT || 3000);
-app.listen(port_number);
 
 app.use(bodyParser.json());
 
+//How we start the server
+app.listen(process.env.PORT || 3000);
 //Import routes
 
 //user route
@@ -34,5 +34,3 @@ mongoose.connect(
     console.log("connected to db");
   }
 );
-
-//How we start the server
