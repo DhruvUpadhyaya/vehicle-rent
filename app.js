@@ -7,6 +7,7 @@ app.use(bodyParser.json());
 
 //How we start the server
 app.listen(process.env.PORT || 3000);
+console.log("Env " + env);
 //Import routes
 
 //user route
