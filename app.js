@@ -6,16 +6,9 @@ const app = express();
 app.use(bodyParser.json());
 
 //How we start the server
+app.listen(process.env.PORT || 3000);
 //Import routes
 
-var http = require("http");
-var server = http.Server(app);
-
-//app.use(express.static('client'));
-
-server.listen(PORT, function () {
-  console.log(" server running");
-});
 //user route
 const userRoutes = require("./controller/user_controller");
 app.use("/user", userRoutes);
