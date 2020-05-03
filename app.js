@@ -2,6 +2,7 @@ const express = require("express");
 const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
 const app = express();
+app.listen(process.env.PORT || 3000);
 
 app.use(bodyParser.json());
 
@@ -34,4 +35,3 @@ mongoose.connect(
 );
 
 //How we start the server
-app.listen(process.env.PORT || 3000);
